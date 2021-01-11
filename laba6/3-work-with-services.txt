@@ -1,0 +1,5 @@
+1. tasklist > list-of-processes
+2.1 tasklist | findstr dns-client | net stop
+2.2 sleep 10, tasklist > new-list-of-processes
+2.3 FC process-list new-process-list
+2.4 FC process-list new-process-list > difference.txt; for line in (difference.txt) do start line
